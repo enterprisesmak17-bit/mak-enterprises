@@ -1,0 +1,172 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: #0A3D62;
+  color: white;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+header nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+header nav a:hover {
+  color: #FFC400;
+}
+
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url('hero.jpg') center/cover no-repeat;
+  color: white;
+  padding: 120px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 40px;
+}
+
+.cta-btn {
+  background: #FFC400;
+  padding: 12px 24px;
+  color: #000;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.cta-btn:hover {
+  background: #e6b100;
+}
+
+h2 {
+  text-align: center;
+  margin: 40px 0 20px;
+}
+
+.about {
+  padding: 20px 40px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.card {
+  background: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.products {
+  padding: 20px 40px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.product-card {
+  background: #fafafa;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  border-color: #0A3D62;
+}
+
+.services {
+  padding: 20px 40px;
+  background: #f0f0f0;
+}
+
+.services ul li {
+  font-size: 18px;
+  padding: 8px 0;
+}
+
+.contact {
+  padding: 20px 40px;
+}
+
+.contact-info p {
+  font-size: 18px;
+}
+
+.contact-form {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.contact-form textarea {
+  grid-column: span 2;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  grid-column: span 2;
+  padding: 12px;
+  background: #0A3D62;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.contact-form button:hover {
+  background: #06283b;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #0A3D62;
+  color: white;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .product-grid, .about-grid, .contact-form {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-grid, .about-grid, .contact-form {
+    grid-template-columns: 1fr;
+  }
+}
